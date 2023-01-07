@@ -1,0 +1,118 @@
+/*
+ *  =============================================
+ *  INDEX PAGE
+ *  =============================================
+ */
+
+/*
+ *  ---------------------------------------------
+ *  FONTS
+ *  ---------------------------------------------
+ */
+
+@font-face {
+  font-family: 'Martian Mono';
+  font-display: swap;
+  font-weight: 700;
+  src: url('MartianMono-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Martian Mono';
+  font-display: swap;
+  font-weight: 400;
+  src: url('MartianMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Martian Mono';
+  font-display: swap;
+  font-weight: 300;
+  src: url('MartianMono-Light.woff2') format('woff2');
+}
+
+/*
+ *  ---------------------------------------------
+ *  GLOBAL
+ *  ---------------------------------------------
+ */
+
+html {
+  font-size: 85%;
+}
+
+body {
+  background-color: #FFF2E8;
+  color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  font-family: "Martian Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.3;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+a:link, a:visited {
+  border-bottom: 1px solid;
+  color: inherit;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #2b2b2b;
+  border-color: transparent;
+  color: #fff;
+}
+
+@media (min-width: 80em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/*
+ *  ---------------------------------------------
+ *  HEADER
+ *  ---------------------------------------------
+ */
+
+header {
+  background-color: #FFFCF9;
+  color: #666;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+/*
+ *  ---------------------------------------------
+ *  GRID
+ *  ---------------------------------------------
+ */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-auto-rows: 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-project {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.c-project__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
