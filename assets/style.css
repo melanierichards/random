@@ -138,20 +138,44 @@ h1 {
   text-align: center;
 }
 
+.c-exploration__thumb {
+  aspect-ratio: 1 / 1;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+  max-width: 16rem;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
 .c-exploration__title {
+  display: inline-block;
   font-size: 1.25rem;
   font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.c-exploration__title::after {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.c-exploration__desc {
+  position: relative;
+  z-index: 4;
 }
 
 .c-exploration--amari {
   background-color: #8B2209;
   color: #f7e7ce;
   position: relative;
-}
-
-.c-exploration--amari > * {
-  position: relative;
-  z-index: 2;
 }
 
 .c-exploration--amari::before {
