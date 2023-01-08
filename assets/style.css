@@ -66,13 +66,13 @@ main:focus {
 }
 
 ::selection {
-  background: #fff;
-  color: #000;
+  background: #2b2b2b;
+  color: #fff;
 }
 
 ::-moz-selection {
-  background: #fff;
-  color: #000;
+  background: #2b2b2b;
+  color: #fff;
 }
 
 a:link, a:visited {
