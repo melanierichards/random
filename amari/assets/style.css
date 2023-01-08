@@ -66,6 +66,12 @@ main {
   margin-top: 1.25rem;
 }
 
+@media (min-width: 48rem) {
+  html {
+    font-size: 125%;
+  }
+}
+
 /*
  *  ---------------------------------------------
  *  INTRO
@@ -101,17 +107,12 @@ table {
   border-collapse: collapse;
   border: 5px double #8B2209;
   margin: 2rem auto 0;
-  max-width: 54rem;
   width: 100%;
 }
 
 th, td {
   color: #2b2b2b;
   padding: 1rem;
-}
-
-th:first-child, td:first-child {
-  width: 8rem;
 }
 
 th {
@@ -150,8 +151,43 @@ td:last-child {
   background-color: #4B1205;
 }
 
+.c-amari-list {
+  list-style: none;
+  text-align: left;
+}
+
+.c-amari-list li {
+  display: inline-block;
+  margin: 0 .5rem;
+}
+
+.c-amari-list a:link,
+.c-amari-list a:visited,
+.c-amari-list a:hover {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.c-amari-list img {
+  height: auto;
+  transition: all 200ms ease-in-out;
+  width: 64px;
+}
+
+.c-amari-list a:hover img {
+  filter: drop-shadow(0 5px 5px rgba(0,0,0,.5));
+  transform: scale(1.1) rotate(2deg);
+}
+
+.c-amari-list li:nth-child(even) a:hover img {
+  transform: scale(1.1) rotate(-2deg);
+}
+
 @media (min-width: 64rem) {
   table {
     margin-top: 4rem;
+    max-width: 100%;
+    min-width: 48rem;
+    width: auto;
   }
 }
